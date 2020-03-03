@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.navigation{
+    margin: 0 auto;
+    display: inline-block;    
+    text-align: center;
+}
+.navigation>li{
+    display: inline-block;
+    text-align: center;
+}
+.navigation>li>a{
+    display: block;
+    position: relative;   
+    width: 195px;
+    padding: 20px 0;
+    background: #EB706F;
+    color: #FFE3AB;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+.nnm{
+    margin: 20px;
+    text-align: center;
+    color:#FF5658;
+}
+.dish{
+    text-align: center;
+}
+.dish>p{
+    width: 800px;
+    margin: 20px auto;
+}
+h2{
+    margin-top: 20px;
+    color: #A49DEB;
+}
+.scrlup{
+    position: absolute;
+    right: 1px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.up{
+    padding: 20px;
+    border-radius: 40px 40px 0 0;
+    background-color: #A49DEB;
+    color: white;
+    font-size: 20px;
+
+}
+label{
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;   
+}
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked){
+    position: absolute;
+    left: -9999px;
+}
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label{
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after{
+    content: "";
+    position: absolute;
+    transition: all 0.2s ease;
+    left: 3px;
+    top: 4px;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 4px solid #10FF34;
+    border-bottom: 4px solid #10FF34;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+input[type="checkbox"]:checked + label:after{
+    opacity: 1;
+}
+input[type="checkbox"]:not(:checked) + label:after{
+    opacity: 0;
+}
+.bludo ul li{
+    margin-top: 10px;
+}
+main>h1{
+    color:#FF5658;
+}
+.article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 10px;
+}
